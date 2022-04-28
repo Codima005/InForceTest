@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+        "id": 1,
+        "imageUrl": "some url here",
+        "name": "product-1",
+        "count": 453,
+        "size": {
+          "width": 400,
+          "height": 400
+        },
+        "weight": "400g",
+        "comments": [
+          "CommentModel",
+          "CommentModel"
+        ]
+      },
+      {
+        "id": 2,
+        "imageUrl": "some url here",
+        "name": "product-2",
+        "count": 453,
+        "size": {
+          "width": 400,
+          "height": 400
+        },
+        "weight": "400g",
+        "comments": [
+          "CommentModel",
+          "CommentModel"
+        ]
+      },
+      {
+        "id": 3,
+        "imageUrl": "some url here",
+        "name": "product-3",
+        "count": 453,
+        "size": {
+          "width": 400,
+          "height": 400
+        },
+        "weight": "400g",
+        "comments": [
+          "CommentModel",
+          "CommentModel"
+        ]
+      },
+    {
+      "id": 4,
+      "imageUrl": "some url here",
+      "name": "product-4",
+      "count": 453,
+      "size": {
+        "width": 400,
+        "height": 400
+      },
+      "weight": "400g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
+    {
+        "id": 5,
+        "imageUrl": "some url here",
+        "name": "product-5",
+        "count": 453,
+        "size": {
+          "width": 400,
+          "height": 400
+        },
+        "weight": "400g",
+        "comments": [
+          "CommentModel",
+          "CommentModel"
+        ]
+      },
+    {
+      "id": 6,
+      "imageUrl": "some url here",
+      "name": "product-6",
+      "count": 55,
+      "size": {
+        "width": 500,
+        "height": 500
+      },
+      "weight": "500g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    }
+  ]
+}
