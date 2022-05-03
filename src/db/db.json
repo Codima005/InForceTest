@@ -1,50 +1,50 @@
 {
   "products": [
     {
-        "id": 1,
-        "imageUrl": "some url here",
-        "name": "product-1",
-        "count": 453,
-        "size": {
-          "width": 400,
-          "height": 400
-        },
-        "weight": "400g",
-        "comments": [
-          "CommentModel",
-          "CommentModel"
-        ]
+      "id": 1,
+      "imageUrl": "some url here",
+      "name": "product-1",
+      "count": 453,
+      "size": {
+        "width": 400,
+        "height": 400
       },
-      {
-        "id": 2,
-        "imageUrl": "some url here",
-        "name": "product-2",
-        "count": 453,
-        "size": {
-          "width": 400,
-          "height": 400
-        },
-        "weight": "400g",
-        "comments": [
-          "CommentModel",
-          "CommentModel"
-        ]
+      "weight": "400g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "some url here",
+      "name": "product-2",
+      "count": 453,
+      "size": {
+        "width": 400,
+        "height": 400
       },
-      {
-        "id": 3,
-        "imageUrl": "some url here",
-        "name": "product-3",
-        "count": 453,
-        "size": {
-          "width": 400,
-          "height": 400
-        },
-        "weight": "400g",
-        "comments": [
-          "CommentModel",
-          "CommentModel"
-        ]
+      "weight": "400g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "some url here",
+      "name": "product-3",
+      "count": 453,
+      "size": {
+        "width": 400,
+        "height": 400
       },
+      "weight": "400g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
     {
       "id": 4,
       "imageUrl": "some url here",
@@ -61,20 +61,20 @@
       ]
     },
     {
-        "id": 5,
-        "imageUrl": "some url here",
-        "name": "product-5",
-        "count": 453,
-        "size": {
-          "width": 400,
-          "height": 400
-        },
-        "weight": "400g",
-        "comments": [
-          "CommentModel",
-          "CommentModel"
-        ]
+      "id": 5,
+      "imageUrl": "some url here",
+      "name": "product-5",
+      "count": 453,
+      "size": {
+        "width": 400,
+        "height": 400
       },
+      "weight": "400g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
     {
       "id": 6,
       "imageUrl": "some url here",
@@ -89,6 +89,18 @@
         "CommentModel",
         "CommentModel"
       ]
+    },
+    {
+      "imageUrl": "",
+      "name": "adw",
+      "count": "adwd",
+      "size": {
+        "width": "adwd",
+        "height": "adwdwa"
+      },
+      "weight": "dwa",
+      "comments": [],
+      "id": 7
     }
   ]
 }

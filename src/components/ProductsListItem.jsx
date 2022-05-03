@@ -4,17 +4,18 @@ import React from 'react';
 import Modal from 'react-modal';
 const customStyles = {
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
+  top: '50%',
+  left: '50%',
+  right: 'auto',
+  bottom: 'auto',
+  marginRight: '-50%',
+  transform: 'translate(-50%, -50%)',
+},
 };
 Modal.setAppElement('#root');
 export const ProductsListItem = ({ product, onDelete }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
+
 
   function openModal() {
     setIsOpen(true);
@@ -22,6 +23,7 @@ export const ProductsListItem = ({ product, onDelete }) => {
   function closeModal() {
     setIsOpen(false);
   }
+
   const handleDelate = () => {
     onDelete(product.id);
     closeModal()
@@ -31,17 +33,19 @@ export const ProductsListItem = ({ product, onDelete }) => {
     <div>
       <li className="product-list-item" >
         <a href={`/products/${product.id}`}> {product.name} </a>
-        {product.count}
+        <a>{product.count}</a>
         &nbsp;
         <a href="#" onClick={openModal}>
           Delete
         </a>
       </li>
+
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
+        contentLabel="Modal"
       >
 
         <div>are you sure?</div>

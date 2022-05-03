@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { ProductsList } from "../components/ProductsList"
-import { getProducts, deleteProduct } from "../services/productsServices"
+import { getProducts, deleteProduct, createProduct } from "../services/productsServices"
 
 function dynamicSort(property) {
     var sortOrder = 1;
@@ -15,9 +15,12 @@ function dynamicSort(property) {
     }
 }
 
+
 export const Products = () => {
     const [sortType, setSortType] = useState("name")
     const [data, setData] = useState([])
+    
+
 
     useEffect(() => {
         const getData = async () => {
@@ -32,6 +35,13 @@ export const Products = () => {
         const res = await getProducts()
         setData(res)
     }
+
+    const onSubmitProduct = async (newProduct) => {
+        await createProduct(newProduct)
+        const res = await getProducts()
+        setData(res)  
+    }
+
     const onSortTypeChange = (e) => {
         setSortType(e.target.value)
     }
@@ -44,7 +54,7 @@ export const Products = () => {
                 <option value="name">Name</option>
                 <option value="count">Count</option>
             </select>
-            <ProductsList data={sortedData} onDelete={onDeleteProduct} />
+            <ProductsList data={sortedData} onDelete={onDeleteProduct} onSubmit={onSubmitProduct} />
         </div>
     )
 } 
